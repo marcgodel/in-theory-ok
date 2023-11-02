@@ -6,7 +6,7 @@
 #    By: mgodel <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/18 12:46:59 by mgodel            #+#    #+#              #
-#    Updated: 2023/10/26 08:30:04 by mgodel           ###   ########.fr        #
+#    Updated: 2023/11/02 10:37:01 by mgodel           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME = libft.a
@@ -79,7 +79,7 @@ OBJS_BONUS : $(SRCS_BONUS)
 	$(CC) $(CFLAGS) -c $^ $@
 
 bonus: $(OBJS_BONUS) $(OBJS) $(HEADERS)
-	ar -rc libft.a $^
+	ar -rc $(NAME) $^
 
 main.o :
 	$(CC) -w -c main.c
